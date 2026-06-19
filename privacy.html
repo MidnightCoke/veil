@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Privacy Policy — Veil</title>
+<meta name="description" content="Veil collects no data. Privacy policy for the Veil AI Chat History Blur extension." />
+<link rel="icon" href="assets/logo.png" />
+<style>
+  :root{--bg:#0F172A;--surface:#111c34;--border:#243148;--text:#F8FAFC;--muted:#9FB0C8;
+    --accent:#2563EB;--accent-soft:#60A5FA;--font:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.7;-webkit-font-smoothing:antialiased}
+  a{color:var(--accent-soft);text-decoration:none}a:hover{text-decoration:underline}
+  img{display:block}
+  .wrap{max-width:780px;margin:0 auto;padding:0 24px}
+  header.nav{position:sticky;top:0;background:rgba(11,17,32,.72);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px;max-width:1120px;margin:0 auto;padding:0 24px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:17px;color:var(--text)}
+  .brand img{width:28px;height:28px;border-radius:7px}
+  .nav-inner a.back{color:var(--muted);font-size:14.5px}
+  main{padding:64px 0 80px}
+  h1{font-size:clamp(30px,5vw,42px);letter-spacing:-.02em;margin:0 0 8px;font-weight:800}
+  .updated{color:var(--muted);font-size:14px;margin:0 0 36px}
+  h2{font-size:21px;letter-spacing:-.01em;margin:38px 0 12px;font-weight:700}
+  p,li{color:#D5DEEC;font-size:16px}
+  .lead{font-size:18px;color:var(--text)}
+  ul{padding-left:22px}li{margin:6px 0}
+  table{width:100%;border-collapse:collapse;margin:14px 0;font-size:15px}
+  th,td{text-align:left;padding:11px 14px;border:1px solid var(--border)}
+  th{background:var(--surface);color:var(--text)}
+  td code{background:var(--surface);padding:2px 7px;border-radius:6px;font-size:13.5px;color:var(--accent-soft)}
+  .callout{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:20px 24px;margin:24px 0}
+  footer{border-top:1px solid var(--border);padding:34px 0;color:#7E8DA6;font-size:13px;margin-top:40px}
+  footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+</style>
+</head>
+<body>
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html"><img src="assets/logo.png" alt="Veil" />Veil</a>
+    <a class="back" href="index.html">&larr; Back to home</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: June 19, 2026</p>
+
+    <p class="lead">Veil is a browser extension that visually blurs your AI chat history on
+      ChatGPT, Claude, and Gemini. This policy explains exactly what it does — and does not do — with your information.</p>
+
+    <div class="callout">
+      <strong>The short version:</strong> Veil collects no data. It has no servers, no accounts,
+      and no analytics. It does not track you and transmits nothing. Everything happens locally, in your browser.
+    </div>
+
+    <h2>What Veil stores</h2>
+    <p>Veil saves your preferences locally using the browser&rsquo;s storage (<code>chrome.storage.local</code>):</p>
+    <ul>
+      <li>blur on/off state</li>
+      <li>blur strength</li>
+      <li>the &ldquo;show pinned chats&rdquo; option</li>
+      <li>language</li>
+      <li>theme</li>
+    </ul>
+    <p>This information stays on your device and is never sent anywhere. Uninstalling the extension removes it.</p>
+
+    <h2>What Veil accesses</h2>
+    <p>Veil runs <strong>only</strong> on the supported AI chat sites — <code>chatgpt.com</code>,
+      <code>chat.openai.com</code>, <code>claude.ai</code>, and <code>gemini.google.com</code> — to apply the
+      visual blur to the page you are viewing. It does <strong>not</strong> read, store, or transmit the content
+      of your conversations. The blur is a purely visual effect applied locally.</p>
+
+    <table>
+      <thead><tr><th>Permission</th><th>Why</th></tr></thead>
+      <tbody>
+        <tr><td><code>storage</code></td><td>Save your settings (above) locally on your device.</td></tr>
+        <tr><td><code>activeTab</code></td><td>Apply or update the blur on the AI chat page in your current tab when you toggle Veil.</td></tr>
+      </tbody>
+    </table>
+    <p>Veil requests no broad host permissions beyond the content scripts needed to render the blur on the supported sites.</p>
+
+    <h2>Data sharing and selling</h2>
+    <p>Veil does <strong>not</strong> sell or transfer user data to third parties. It does not use or transfer
+      data for advertising, for determining creditworthiness, for lending, or for any purpose unrelated to its
+      single purpose (visually blurring your AI chat history).</p>
+
+    <h2>Remote code</h2>
+    <p>Veil contains <strong>no remote code</strong>. All code ships inside the extension package; nothing is
+      loaded or executed from external sources.</p>
+
+    <h2>Children</h2>
+    <p>Veil collects no data from anyone, including children.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If this policy changes, the &ldquo;Last updated&rdquo; date above will be revised.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about privacy? <a href="https://github.com/MidnightCoke/veil/issues">Open an issue on GitHub</a>.</p>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; 2026 Veil</span>
+    <span>Not affiliated with OpenAI, Anthropic, or Google.</span>
+  </div>
+</footer>
+</body>
+</html>
